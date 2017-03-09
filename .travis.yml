@@ -5,9 +5,7 @@ python:
     - 3.6
 
 install:
-    - virtualenv venv
-    - source venv/bin/activate
-    - travis_retry pip install -r requirements/base.txt
+    - pip install -r requirements/base.txt
 
 sudo: false
 
