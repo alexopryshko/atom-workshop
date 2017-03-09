@@ -7,6 +7,9 @@ python:
 install:
     - pip install -r requirements/base.txt
 
+script:
+    - pylint todo
+
 sudo: false
 
 matrix:
