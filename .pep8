@@ -1,0 +1,9 @@
+[pep8]
+ignore=D,I
+exclude=.git,client,docs,requirements,mcalendar/contrib
+max_line_length=99
+
+[flake8]
+ignore=D,I
+exclude=.git,client,docs,requirements,mcalendar/contrib
+max_line_length=99

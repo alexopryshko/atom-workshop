@@ -1,0 +1,15 @@
+# https://travis-ci.org/tornadoweb/tornado
+language: python
+python:
+    - 3.5
+    - 3.6
+
+install:
+    - virtualenv venv
+    - source venv/bin/activate
+    - travis_retry pip install -r requirements/base.txt
+
+sudo: false
+
+matrix:
+    fast_finish: true
