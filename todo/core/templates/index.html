@@ -7,5 +7,15 @@
 {% endblock %}
 
 {% block content %}
-    <div class="test">test</div>
+    <div class="tasks">
+        {% for task_id, task in tasks %}
+            <div class="tasks__item">
+                <div class="tasks__item-title">
+                    <a href="{% url "task" task_id %}">{{ task.title }}</a>
+                </div>
+                <div class="tasks__item-text">{{ task.text }}</div>
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock %}
