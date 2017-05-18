@@ -30,10 +30,10 @@ def http():
     return HttpClientModule()
 
 
-@pytest.fixture()
-def models(db):
-    from tests.base.modules.model import ModelModule
-    return ModelModule()
+# @pytest.fixture()
+# def models(db):
+#     from tests.base.modules.model import ModelModule
+#     return ModelModule()
 
 
 @pytest.yield_fixture(scope='session', autouse=True)

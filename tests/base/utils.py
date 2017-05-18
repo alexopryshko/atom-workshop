@@ -44,6 +44,5 @@ def authenticate(_user):
         """
         return _user
 
-    with mock.patch('mcalendar.auth.backends.CalDAVBasicAuthBackend.authenticate', auth_with_user):
-        with mock.patch('mcalendar.auth.backends.SwaSessionBackend.authenticate', auth_with_user):
-            yield
+    with mock.patch('django.contrib.auth.authenticate', auth_with_user):
+        yield

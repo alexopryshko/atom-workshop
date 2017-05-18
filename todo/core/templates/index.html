@@ -7,5 +7,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="test">test</div>
+    {% for item in todos %}
+        <div class="test">{{ item.title }}</div>
+    {% endfor %}
 {% endblock %}
